@@ -59,4 +59,31 @@ public class SimpleCalculatorTest {
 
         assertThat(rs).isEqualTo(63);
     }
+
+    @Test
+    @DisplayName("7 - 6 = 1")
+    public void t7() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.minus(7, 6);
+
+        assertThat(rs).isEqualTo(1);
+    }
+
+    @Test
+    @DisplayName("15 - 13 = 2")
+    public void t8() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.minus(15, 13);
+
+        assertThat(rs).isEqualTo(2);
+    }
+
+    @Test
+    @DisplayName("50 - 20 = 30")
+    public void t9() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.minus(50, 20)
+
+        assertThat(rs).isEqualTo(30);
+    }
 }
