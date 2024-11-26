@@ -86,4 +86,31 @@ public class SimpleCalculatorTest {
 
         assertThat(rs).isEqualTo(30);
     }
+
+    @Test
+    @DisplayName("15 / 3 = 5")
+    public void t10() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.divide(15, 3);
+
+        assertThat(rs).isEqualTo(5);
+    }
+
+    @Test
+    @DisplayName("20 / 6 = 3")
+    public void t11() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.divide(20, 6);
+
+        assertThat(rs).isEqualTo(3);
+    }
+
+    @Test
+    @DisplayName("24 / 4 = 6")
+    public void t12() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.divide(24, 4);
+
+        assertThat(rs).isEqualTo(6);
+    }
 }
