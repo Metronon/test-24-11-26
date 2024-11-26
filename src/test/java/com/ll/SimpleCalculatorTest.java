@@ -82,7 +82,7 @@ public class SimpleCalculatorTest {
     @DisplayName("50 - 20 = 30")
     public void t9() {
         SimpleCalculator simpleCalculator = new SimpleCalculator();
-        int rs = simpleCalculator.minus(50, 20)
+        int rs = simpleCalculator.minus(50, 20);
 
         assertThat(rs).isEqualTo(30);
     }
